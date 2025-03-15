@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        nav ul li {
+            margin-bottom: 1em;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav ul li a:hover {
+            color: #ddd;
+        }
+        @media (min-width: 768px) {
+            nav ul {
+                flex-direction: row;
+            }
+            nav ul li {
+                margin-bottom: 0;
+                margin-right: 1em;
+            }
+        }
+        @media (min-width: 1024px) {
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        section {
+            padding: 2em;
+        }
+        .project-card {
+            border: 1px solid #ddd;
+            padding: 1em;
+            margin-bottom: 1em;
+            transition: transform 0.3s;
+        }
+        .project-card:hover {
+            transform: scale(1.05);
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        form label {
+            margin-bottom: 0.5em;
+        }
+        form input, form textarea {
+            margin-bottom: 1em;
+            padding: 0.5em;
+            border: 1px solid #ddd;
+        }
+        form button {
+            padding: 0.5em;
+            border: none;
+            background-color: #333;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        form button:hover {
+            background-color: #555;
+        }
+        #about, #experience, #education, #publications, #skills {
+            text-align: left;
+        }
+        #about {
+            background-color: #f9f9f9;
+        }
+        #experience {
+            background-color: #ffffff;
+        }
+        #education {
+            background-color: #f9f9f9;
+        }
+        #publications {
+            background-color: #ffffff;
+        }
+        #skills {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rathi Ramasamy</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#publications">Articles</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to My Portfolio</h2>
+        <p>Discover my work and skills in data science.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Impact management professional skilled in qualitative and quantitative data analysis and passionate about using impact data to make better investment decisions that benefit people and the planet.</p>
+    </section>
+
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <h3>Impact Frontiers Manager | May 2023 - Present</h3>
+            <p>Helping impact investors make better decisions by developing frameworks, content, and courses.</p>
+            <ul>
+                <li>Impact Performance Reporting: Created and launched a standardized framework for impact reporting based on an 18-month public consultation with 350+ investors; piloted framework with 100+ investors; developed additional guidance on attribution and incorporating qualitative data.</li>
+                <li>Social Equity: Revised the Five Dimensions of Impact and launched a new practical implementation guide for social equity impact management. Worked with external equity experts and facilitated a year-long public consultation with 50+ investors, conducted an equity audit of existing frameworks and synthesized emerging best practices.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>SDS Capital Group AVP, Impact & Impact Manager | March 2020 - May 2023</h3>
+            <p>Led three-person impact team to help build affordable housing and create job opportunities in low-income communities.</p>
+            <ul>
+                <li>Impact Management: Led impact measurement and reporting process.</li>
+                <li>Analyzed impact data for 100+ real estate investments across four funds ($1.4B AUM);</li>
+                <li>Overhauled data collection and reporting process to improve impact reporting. Developed environmental impact surveys for adaptive reuse projects and well-being surveys for Permanent Supportive Housing residents. Implemented impact data tracking using Salesforce to streamline data collection from portfolio investments.</li>
+                <li>Created fund and investment impact reports, including the launch of the firm’s first interactive online fund reports.</li>
+                <li>New Markets Tax Credit Applications: Managed NMTC applications for SDS and four client CDFIs (~$200M yearly allocation); developed and refined client impact ratings to evaluate and select investments.</li>
+                <li>Strategic Planning: Developed 10-year Strategic Plan alongside CEO and executive team; led firm-wide implementation of goal-tracking framework to set and track progress against Strategic Plan.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Health Management Associates Research Associate (Consultant)| Oct 2018- March 2020</h3>
+            <p>Helped healthcare, non-profit, and government clients address social determinants of health to improve health outcomes.</p>
+            <ul>
+                <li>Opioid Systems of Care: Helped California Department of Health Care Services expand medication assisted treatment (MAT) for opioid use disorder. Analyzed SAMHSA and health system capacity data to identify 10 counties to expand MAT; developed technical assistance curriculum for multi-agency working groups in each county to streamline access to care.</li>
+                <li>Exploring Child Care Models: Performed mixed-method research on behalf of an advocacy organization to design new child care program models to support unhoused families.</li>
+                <li>Measure H Evaluation: Performed mixed-method evaluation of LA County shelter strategy to improve interim and emergency housing resources.</li>
+            </ul>
+        </div>
+        <div class="experience-item">
+            <h3>Additional Experience</h3>
+            <ul>
+                <li>Hospital Association of Southern California | Fellow | June 2017 - Aug 2018</li>
+                <li>IMPACT Community Action | Emergency Assistance Representative | March 2015 - Aug 2015</li>
+                <li>AmeriCorps VISTA | ACA Project Manager | Feb 2014 - Feb 2015</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>UCLA | MPH, 2017 | Health Policy and Management</li>
+            <li>DENISON UNIVERSITY | BA, 2013 | English Major, Philosophy Minor</li>
+        </ul>
+    </section>
+
+    <section id="publications">
+        <h2>Articles & Speaking Engagements</h2>
+        <ul>
+            <li>Elevating impact reporting (ImpactAlpha)</li>
+            <li>The future of impact reporting (New Private Markets)</li>
+            <li>Canada Responsible Investment Association Conference, 2024: Panelist, “Impact measurement as an antidote to greenwashing”</li>
+        </ul>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>MS Office Suite</li>
+            <li>Qualtrics</li>
+            <li>Dedoose and NVivo</li>
+            <li>Basic R</li>
+            <li>Basic SQL</li>
+            <li>Salesforce</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Project 1</h3>
+            <p>Description of project 1.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 2</h3>
+            <p>Description of project 2.</p>
+        </div>
+        <div class="project-card">
+            <h3>Project 3</h3>
+            <p>Description of project 3.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>Connect with me on social media:</p>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/rathi-ramasamy-mph-b33b8361/">LinkedIn</a></li>
+            <li><a href="https://github.com/rthramasamy">GitHub</a></li>
+        </ul>
+    </footer>
+
+    <button id="back-to-top" style="display: none; position: fixed; bottom: 2em; right: 2em; padding: 1em; background-color: #333; color: white; border: none; cursor: pointer;">Top</button>
+
+    <script>
+        // Smooth scrolling navigation
+        document.querySelectorAll('nav ul li a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Back-to-top button
+        const backToTopButton = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
+
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Contact form validation
+        const form = document.querySelector('form');
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Form submitted successfully!');
+                form.reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        // Hover effects on project cards
+        document.querySelectorAll('.project-card').forEach(card => {
+            card.addEventListener('mouseover', () => {
+                card.style.transform = 'scale(1.05)';
+            });
+            card.addEventListener('mouseout', () => {
+                card.style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>
